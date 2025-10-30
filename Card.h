@@ -1,19 +1,21 @@
 #include <iostream>
 using namespace std;
 
+class Account;
+
 class Card{
 private:
 string cardNumber;
-int cardPW;
+string cardPW;
 Account* linkedAccount;
 
 public:
-Card(string CardNumber, int CardPW, Account* linkedAcccount)
+Card(string CardNumber, string CardPW, Account* linkedAccount);
 
-string getcardNumber() const;
+string getCardNumber() const;
 
-bool verifyPW(password);
-Account* getlinkedAccount();
+bool verifyPW(const string password) const;
+Account* getLinkedAccount();
 };
 
 
