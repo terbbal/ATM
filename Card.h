@@ -14,7 +14,7 @@ Card(string CardNumber, string CardPW, Account* linkedAccount);
 
 string getCardNumber() const;
 
-bool verifyPW(const string password) const;
+bool verifyPW(const string password) const; //Exception Handling
 Account* getLinkedAccount();
 };
 
